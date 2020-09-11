@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<head>
+    <title></title>
+  <script type="text/javascript" language="javascript">
+    function onButtonClick() {
+      selindex = document.form1.Select1.selectedIndex;
+      target = document.getElementById("output");
+      switch (selindex) {
+        case 0:
+          target.innerHTML = "要素1が選択されています。<br/>";
+          break;
+        case 1:
+          target.innerHTML = "要素2が選択されています。<br/>";
+          break;
+        case 2:
+          target.innerHTML = "要素3が選択されています。<br/>";
+          break;
+        case 3:
+          target.innerHTML = "要素4が選択されています。<br/>";
+          break;
+        case 4:
+          target.innerHTML = "要素5が選択されています。<br/>";
+          break;
+      }
+    }
+  </script>
+</head>
+<body>
+  <form name="form1" action="">
+    <select id="Select1"">
+      <option>要素1</option>
+      <option>要素2</option>
+      <option>要素3</option>
+      <option>要素4</option>
+      <option>要素5</option>
+    </select>
+    <input type="button" value="Exec" onclick="onButtonClick();" />
+  </form>
+
+  <div id="output"></div>
+</body>
+</html>

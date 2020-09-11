@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+    <title></title>
+  <script type="text/javascript" language="javascript">
+    function onButtonClick() {
+      selindex = document.form1.Select1.selectedIndex;
+      target = document.getElementById("output");
+      switch (selindex) {
+        case 0:
+          target.innerHTML = "data1 select <br/>";
+          break;
+        case 1:
+          target.innerHTML = "data2 select<br/>";
+          break;
+        case 2:
+          target.innerHTML = "data3 select<br/>";
+          break;
+        case 3:
+          target.innerHTML = "data4 select<br/>";
+          break;
+        case 4:
+          target.innerHTML = "data5 select<br/>";
+          break;
+      }
+    }
+  </script>
+</head>
+<body>
+  <form name="form1" action="">
+    <select id="Select1"">
+      <option>data1</option>
+      <option>data2</option>
+      <option>data3</option>
+      <option>data4</option>
+      <option>data5</option>
+    </select>
+    <input type="button" value="Exec" onclick="onButtonClick();" />
+  </form>
+
+  <div id="output"></div>
+</body>
+</html>
