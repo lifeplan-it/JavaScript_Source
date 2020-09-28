@@ -14,3 +14,4 @@ function keisan() {
 
    alert(ketasuu);
 }
+ 

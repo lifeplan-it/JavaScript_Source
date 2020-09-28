@@ -1,20 +1,70 @@
 <html>
     <head>
-        <script src="program.js"></script>
+        <script src="program.js"></script
+        <audio id="kaiten" preload="auto">
+        <source src="oto/kaiten.mp3" type=
+"audio/mp3">
+	</audio>
+
+　　    <audio id="ochiru" preload="auto">
+        <source src="oto/ochiru.mp3" type=
+"audio/mp3">
+        </audio>
+
+<audio id="don" preload="auto">
+        <source src="oto/don.mp3" type=
+"audio/mp3">
+        </audio>
+
+<audio id="kieru" preload="auto">
+        <source src="oto/kieru.mp3" type=
+"audio/mp3">
+        </audio>
+
+<audio id="zenbu" preload="auto">
+        <source src="oto/zenbu.mp3" type=
+"audio/mp3">
+        </audio>
+
+<audio id="gameover" preload="auto">
+        <source src="oto/gameover.mp3" type=
+"audio/mp3">
+        </audio>
     </head>
 
-    <body>
-        <h1>計算プログラム例</h1>
+     <body>
+        <div style="position:absolute;
+left:20px; top:10px">
 
-        <div>
-	 1つ目の値<input type="text"
-id="atai1"><br>
-	2つ目の値<input type="text"
-id="atai2"><br>
-          <button onclick="keisan()">足し算する
-</button>
-	<br>
-	<span id="kekka"></span>  
+      	<h1>落ち物パズル</h1>
+          <div style="width: 380px;">
+         スコア:<span id="tokuten">0</span>
         </div>
-    </body>
+       </div>
+
+	<canvas id="back" width="240"
+height="440"
+          style="position:absolute;
+left:20px; top:150px; background-color:black">
+</canvas>
+
+	<canvas id="game" width="240"
+height="440
+	  style="position:absolute;
+left:20px; top:150px; background-color:transparent;">
+</canvas>
+
+<canvas id="tsugi" width="80"
+height="80"
+          style="position:absolute;
+left:300px; top:150px; background-color:black">
+</canvas>
+
+	<button id="kaishibtn"
+           style="position: absolute;
+left: 300px; top:300px; width:80px;
+height:50px;"">
+	     ゲーム<br>スタート
+	</button>
+     </body>
 </html>
